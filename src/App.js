@@ -1,11 +1,11 @@
 import React from "react";
 import { FaWhatsapp, FaGem, FaStar, FaGift } from "react-icons/fa";
-import bgImage from "./assets/casino-bg.jpg";
+import bgImage from "./assets/casino-bg.jpg"; // Убедись, что картинка доступна в этом пути
 
 function App() {
   return (
     <div
-      className="relative h-screen overflow-hidden bg-cover bg-center"
+      className="relative min-h-screen overflow-hidden bg-cover bg-center"
       style={{ backgroundImage: `url(${bgImage})` }} // Устанавливаем фоновое изображение
     >
       {/* Полупрозрачный Overlay */}
@@ -13,39 +13,57 @@ function App() {
 
       {/* Основной контент */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
-        <h1 className="text-5xl font-extrabold mb-6 animate-fade-in">
-          BET365 ya Xoş Gəlmisiniz
+        {/* Заголовок с адаптивностью */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-6 animate-fade-in">
+          VIP Kazino’ya Xoş Gəlmisiniz
         </h1>
-        <p className="text-xl mb-8 animate-slide-in">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 animate-slide-in">
           Həyəcan və uğur axtarırsınız? Ən yaxşı onlayn kazino ilə oynayın!
         </p>
 
         {/* Карточки с преимуществами */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-10 max-w-screen-lg">
+          {/* Карточка 1 */}
           <div className="bg-black bg-opacity-70 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all">
-            <FaGem className="text-4xl text-purple-400 mb-4 mx-auto" />
-            <h2 className="text-2xl font-bold mb-2">Brilyant Qazanc</h2>
-            <p>Şansınızı sınayın və inanılmaz hədiyyələr qazanın!</p>
+            <FaGem className="text-3xl sm:text-4xl text-purple-400 mb-4 mx-auto" />
+            <h2 className="text-xl sm:text-2xl font-bold mb-2">
+              Brilyant Qazanc
+            </h2>
+            <p className="text-sm sm:text-base">
+              Şansınızı sınayın və inanılmaz hədiyyələr qazanın!
+            </p>
           </div>
+
+          {/* Карточка 2 */}
           <div className="bg-black bg-opacity-70 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all">
-            <FaStar className="text-4xl text-yellow-400 mb-4 mx-auto" />
-            <h2 className="text-2xl font-bold mb-2">Yüksək Qazanma Şansı</h2>
-            <p>Ən yaxşı uduş şansları ilə ədalətli oyunu yaşayın.</p>
+            <FaStar className="text-3xl sm:text-4xl text-yellow-400 mb-4 mx-auto" />
+            <h2 className="text-xl sm:text-2xl font-bold mb-2">
+              Yüksək Qazanma Şansı
+            </h2>
+            <p className="text-sm sm:text-base">
+              Ən yaxşı uduş şansları ilə ədalətli oyunu yaşayın.
+            </p>
           </div>
+
+          {/* Карточка 3 */}
           <div className="bg-black bg-opacity-70 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-all">
-            <FaGift className="text-4xl text-red-400 mb-4 mx-auto" />
-            <h2 className="text-2xl font-bold mb-2">Bonuslar və Aksiyalar</h2>
-            <p>Eksklüziv bonuslar və xüsusi təkliflərdən yararlanın.</p>
+            <FaGift className="text-3xl sm:text-4xl text-red-400 mb-4 mx-auto" />
+            <h2 className="text-xl sm:text-2xl font-bold mb-2">
+              Bonuslar və Aksiyalar
+            </h2>
+            <p className="text-sm sm:text-base">
+              Eksklüziv bonuslar və xüsusi təkliflərdən yararlanın.
+            </p>
           </div>
         </div>
 
         {/* Кнопка перехода на WhatsApp */}
         <a
-          href="https://wa.me/+994553344349"
-          className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-12 rounded-full flex items-center justify-center gap-2 transition-transform transform hover:scale-110 shadow-lg animate-bounce"
+          href="https://wa.me/+994503437976"
+          className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 sm:px-10 md:px-12 rounded-full flex items-center justify-center gap-2 transition-transform transform hover:scale-110 shadow-lg animate-bounce"
         >
-          <FaWhatsapp className="text-2xl" />
-          Canli dəstək
+          <FaWhatsapp className="text-xl sm:text-2xl" />
+          WhatsApp ilə Əlaqə
         </a>
       </div>
     </div>
