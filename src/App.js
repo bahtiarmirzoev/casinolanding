@@ -59,7 +59,7 @@ function App() {
 
         {/* Кнопка перехода на WhatsApp */}
         <a
-          href="https://wa.me/+994503437976"
+          href="https://wa.me/+994553344349"
           className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 sm:px-10 md:px-12 rounded-full flex items-center justify-center gap-2 transition-transform transform hover:scale-110 shadow-lg animate-bounce"
         >
           <FaWhatsapp className="text-xl sm:text-2xl" />
