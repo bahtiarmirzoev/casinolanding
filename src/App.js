@@ -1,21 +1,21 @@
 import React from "react";
 import { FaWhatsapp, FaGem, FaStar, FaGift } from "react-icons/fa";
-import bgImage from "./assets/casino-bg.jpg"; // Убедись, что картинка доступна в этом пути
+import bgImage from "./assets/casino-bg.jpg"; // Убедитесь, что изображение доступно
 
 function App() {
   return (
     <div
-      className="relative min-h-screen overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: `url(${bgImage})` }} // Устанавливаем фоновое изображение
+      className="relative min-h-screen overflow-hidden bg-cover bg-center flex items-center justify-center"
+      style={{ backgroundImage: `url(${bgImage})` }} // Фоновое изображение
     >
       {/* Полупрозрачный Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
 
       {/* Основной контент */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center text-white p-4">
         {/* Заголовок с адаптивностью */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-6 animate-fade-in">
-          BET365'e Xoş Gəlmisiniz
+          bet365 Kazino’ya Xoş Gəlmisiniz
         </h1>
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 animate-slide-in">
           Həyəcan və uğur axtarırsınız? Ən yaxşı onlayn kazino ilə oynayın!
