@@ -15,7 +15,7 @@ function App() {
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white p-4">
         {/* Заголовок с адаптивностью */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 sm:mb-6 animate-fade-in">
-          VIP Kazino’ya Xoş Gəlmisiniz
+          BET365'e Xoş Gəlmisiniz
         </h1>
         <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 animate-slide-in">
           Həyəcan və uğur axtarırsınız? Ən yaxşı onlayn kazino ilə oynayın!
