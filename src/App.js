@@ -1,5 +1,13 @@
 import React from "react";
-import { FaWhatsapp, FaGem, FaStar, FaGift } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaGem,
+  FaStar,
+  FaGift,
+  FaInstagram,
+  FaTelegramPlane,
+  FaTiktok,
+} from "react-icons/fa";
 import bgImage from "./assets/casino-bg.jpg"; // Убедитесь, что изображение доступно
 
 function App() {
@@ -65,6 +73,28 @@ function App() {
           <FaWhatsapp className="text-xl sm:text-2xl" />
           WhatsApp ilə Əlaqə
         </a>
+
+        {/* Иконки соцсетей */}
+        <div className="flex space-x-4 mt-6">
+          <a
+            href="https://www.instagram.com"
+            className="text-white hover:text-purple-400 transition-colors"
+          >
+            <FaInstagram className="text-3xl" />
+          </a>
+          <a
+            href="https://telegram.org"
+            className="text-white hover:text-blue-400 transition-colors"
+          >
+            <FaTelegramPlane className="text-3xl" />
+          </a>
+          <a
+            href="https://www.tiktok.com"
+            className="text-white hover:text-black transition-colors"
+          >
+            <FaTiktok className="text-3xl" />
+          </a>
+        </div>
       </div>
     </div>
   );
